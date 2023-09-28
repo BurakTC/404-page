@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Pixelify+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Pixelify+Sans&display=swap');
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://img.freepik.com/premium-vector/pixel-art-game-background-grass-sky-clouds_210544-60.jpg?w=996");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#err{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 7em;
+}
+
+
+@media (max-width: 768px) {
+    #err {
+        font-size: 3em; 
+    }
+}
+@media (min-width: 768px) {
+  
+}
+
+#mario{
+    height: 70px;
+    width: 70px;
+}
+
+@keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+  
+#mario{
+    animation: swing 2s ease-in-out infinite;
+    background-color: transparent;
+}
+  
+
+
+#txt{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Pixelify Sans', cursive;
+}
