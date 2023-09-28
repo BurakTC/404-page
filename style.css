@@ -38,12 +38,6 @@ body{
 @media (min-width: 768px) {
   
 }
-
-#mario{
-    height: 70px;
-    width: 70px;
-}
-
 @keyframes swing {
     0% {
       transform: rotate(0deg);
@@ -65,9 +59,22 @@ body{
 #mario{
     animation: swing 2s ease-in-out infinite;
     background-color: transparent;
+    height: 70px;
+    width: 70px;
 }
-  
 
+  
+#img-container {
+  perspective: 1000px; /* Ajoute une perspective pour l'effet 3D */
+}
+
+#mario {
+  transition: transform 0.5s; /* Ajoute une transition pour l'animation */
+}
+
+#img-container:hover #mario {
+  transform: rotateY(180deg); /* Animation de rotation au survol */
+}
 
 #txt{
     font-family: 'Amatic SC', cursive;
@@ -78,3 +85,4 @@ body{
     font-weight: bold;
 
 }
+
