@@ -73,3 +73,8 @@ body{
     font-family: 'Amatic SC', cursive;
     font-family: 'Pixelify Sans', cursive;
 }
+#marioname{
+    color: red;
+    font-weight: bold;
+
+}
