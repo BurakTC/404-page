@@ -63,17 +63,17 @@ body{
     width: 70px;
 }
 
-  
-#img-container {
-  perspective: 1000px; /* Ajoute une perspective pour l'effet 3D */
+
+#img-container:hover {
+  animation: infinite-loop 2s linear infinite;
 }
 
-#mario {
-  transition: transform 0.5s; /* Ajoute une transition pour l'animation */
-}
-
-#img-container:hover #mario {
-  transform: rotateY(180deg); /* Animation de rotation au survol */
+@keyframes infinite-loop{
+  0%{transform:rotateX(0deg);}
+  25%{transform: rotateY(180deg);}
+  50%{transform: rotateY(360deg);}
+  75%{transform: rotateY(180deg);}
+  100%{transform: rotateY(0deg);}
 }
 
 #txt{
@@ -83,6 +83,5 @@ body{
 #marioname{
     color: red;
     font-weight: bold;
-
 }
 
